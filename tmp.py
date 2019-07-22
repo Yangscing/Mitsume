@@ -7,3 +7,5 @@
 @desc: 
 '''
 print '123'
+
+print 'git使用测试学习'
