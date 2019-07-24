@@ -18,9 +18,6 @@ for flist in flists:
     if app == 'App.UserLic.FirstUseOn':
         appname = flist.split('\n')[0]
         cmd = "sed -i \"\" \'/" + appname +"/d\' " + file_path
-        print cmd
         ret,out = commands.getstatusoutput(cmd)
         if ret == 0:
             print '文件修改成功'
-
-
