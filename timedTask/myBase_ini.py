@@ -9,10 +9,14 @@
 
 import commands
 
+#需要读取的文件
 file_path ='/Users/bjc/.myBase7.ini'
 
-fo = open(file_path,'r+')
-flists = fo.readlines()
+#open函数读取文件
+file_read = open(file_path,'r+')
+#读取文件每一行
+flists = file_read.readlines()
+#for循环读取每一行匹配
 for flist in flists:
     app = flist.split('=')[0]
     if app == 'App.UserLic.FirstUseOn':
